@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - table.html</title>
+  <link rel="stylesheet" href="./style table.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premier League Teams</title>
+  <style>
+    /* Styles for the table */
+    #premier-league-table {
+      display: none; /* Initially hide the table */
+    }
+  </style>
+</head>
+<body>
+  <header style="background-color: #000000;">
+    <h1><img src="pl.png" alt="Premier League Players">Premier League Table</h1>
+    <nav>
+      <ul>
+        <li><a href="index home.html.html">Home</a></li>
+        <li><a href="index team.html">Teams</a></li>
+        <li><a href="index player.html">Players</a></li>
+        <li><a href="#" onclick="toggleTable()">Table</a></li>
+        <!-- The "Table" link will call the toggleTable() function when clicked -->
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="team-list">
+      <!-- Content goes here -->
+    </section>
+    <!-- Premier League table embedded within the HTML -->
+    <table id="premier-league-table">
+      <caption>Premier League Table Standings</caption>
+      <thead>
+        <tr>
+          <th>Position</th>
+          <th>Team</th>
+          <th>Played</th>
+          <th>Won</th>
+          <th>Drawn</th>
+          <th>Lost</th>
+          <th>Goals For</th>
+          <th>Goals Against</th>
+          <th>Goal Difference</th>
+          <th>Points</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Manchester City</td>
+          <td>38</td>
+          <td>25</td>
+          <td>5</td>
+          <td>2</td>
+          <td>80</td>
+          <td>20</td>
+          <td>+60</td>
+          <td>89</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Arsenal</td>
+          <td>38</td>
+          <td>23</td>
+          <td>7</td>
+          <td>2</td>
+          <td>75</td>
+          <td>22</td>
+          <td>+53</td>
+          <td>84</td>
+        </tr>
+         </thead>
+      <tbody>
+        <tr>
+          <td>3</td>
+          <td>Manchester United</td>
+          <td>38</td>
+          <td>23</td>
+          <td>6</td>
+          <td>9</td>
+          <td>58</td>
+          <td>43</td>
+          <td>+15</td>
+          <td>75</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Newcastle</td>
+          <td>38</td>
+          <td>19</td>
+          <td>14</td>
+          <td>5</td>
+          <td>68</td>
+          <td>33</td>
+          <td>+35</td>
+          <td>71</td>
+        </tr>
+         </thead>
+      <tbody>
+        <tr>
+          <td>5</td>
+          <td>Liverpool</td>
+          <td>38</td>
+          <td>19</td>
+          <td>10</td>
+          <td>9</td>
+          <td>79</td>
+          <td>47</td>
+          <td>+28</td>
+          <td>67</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Brighton</td>
+          <td>38</td>
+          <td>18</td>
+          <td>8</td>
+          <td>12</td>
+          <td>72</td>
+          <td>53</td>
+          <td>+19</td>
+          <td>62</td>
+        </tr>
+         </thead>
+      <tbody>
+        <tr>
+          <td>7</td>
+          <td>Aston Villa</td>
+          <td>38</td>
+          <td>18</td>
+          <td>7</td>
+          <td>13</td>
+          <td>51</td>
+          <td>46</td>
+          <td>+6</td>
+          <td>61</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Tottenham</td>
+          <td>38</td>
+          <td>18</td>
+          <td>6</td>
+          <td>14</td>
+          <td>70</td>
+          <td>63</td>
+          <td>+7</td>
+          <td>60</td>
+        </tr>
+         </thead>
+      <tbody>
+        <tr>
+          <td>9</td>
+          <td>Brentford</td>
+          <td>38</td>
+          <td>15</td>
+          <td>14</td>
+          <td>9</td>
+          <td>58</td>
+          <td>48</td>
+          <td>+10</td>
+          <td>59</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Fulham</td>
+          <td>38</td>
+          <td>15</td>
+          <td>7</td>
+          <td>16</td>
+          <td>55</td>
+          <td>53</td>
+          <td>+2</td>
+          <td>52</td>
+        </tr>
+         </thead>
+      <tbody>
+        <tr>
+          <td>11</td>
+          <td>Crystal palace</td>
+          <td>38</td>
+          <td>11</td>
+          <td>12</td>
+          <td>15</td>
+          <td>40</td>
+          <td>49</td>
+          <td>-9</td>
+          <td>45</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>Chelsea</td>
+          <td>38</td>
+          <td>11</td>
+          <td>11</td>
+          <td>16</td>
+          <td>38</td>
+          <td>47</td>
+          <td>-9</td>
+          <td>44</td>
+        </tr>
+         </thead>
+      <tbody>
+        <tr>
+          <td>13</td>
+          <td>Wolves</td>
+          <td>38</td>
+          <td>11</td>
+          <td>8</td>
+          <td>19</td>
+          <td>31</td>
+          <td>58</td>
+          <td>-27</td>
+          <td>41</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>West Ham</td>
+          <td>38</td>
+          <td>11</td>
+          <td>7</td>
+          <td>20</td>
+          <td>42</td>
+          <td>55</td>
+          <td>-13</td>
+          <td>40</td>
+        </tr>
+         </thead>
+      <tbody>
+        <tr>
+          <td>15</td>
+          <td>Bournemouth</td>
+          <td>38</td>
+          <td>11</td>
+          <td>6</td>
+          <td>21</td>
+          <td>37</td>
+          <td>71</td>
+          <td>-34</td>
+          <td>39</td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td>Nottingham Forest</td>
+          <td>38</td>
+          <td>9</td>
+          <td>11</td>
+          <td>18</td>
+          <td>38</td>
+          <td>68</td>
+          <td>-30</td>
+          <td>38</td>
+        </tr>
+         </thead>
+      <tbody>
+        <tr>
+          <td>17</td>
+          <td>Everton</td>
+          <td>38</td>
+          <td>8</td>
+          <td>12</td>
+          <td>18</td>
+          <td>34</td>
+          <td>57</td>
+          <td>-27</td>
+          <td>36</td>
+        </tr>
+        <tr>
+          <td>18</td>
+          <td>Luton</td>
+          <td>34</td>
+          <td>6</td>
+          <td>7</td>
+          <td>21</td>
+          <td>47</td>
+          <td>75</td>
+          <td>-32</td>
+          <td>25</td>
+           </thead>
+      <tbody>
+        <tr>
+          <td>19</td>
+          <td>Burnley</td>
+          <td>34</td>
+          <td>5</td>
+          <td>8</td>
+          <td>21</td>
+          <td>37</td>
+          <td>69</td>
+          <td>-37</td>
+          <td>23</td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td>Sheffield United</td>
+          <td>34</td>
+          <td>3</td>
+          <td>7</td>
+          <td>23</td>
+          <td>31</td>
+          <td>88</td>
+          <td>-57</td>
+          <td>16</td>
+        </tr>
+        </tr>
+        <!-- Add more rows for other teams -->
+      </tbody>
+    </table>
+  </main>
+  <footer>
+    <p>&copy; 2024 Premier League Football</p>
+  </footer>
+  <script>
+    // JavaScript function to toggle the visibility of the Premier League table
+    function toggleTable() {
+      var table = document.getElementById("premier-league-table");
+      if (table.style.display === "none") {
+        table.style.display = "block"; // Show the table
+      } else {
+        table.style.display = "none"; // Hide the table
+      }
+    }
+  </script>
+</body>
+</html>
+<!-- partial -->
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - teams.html</title>
+  <link rel="stylesheet" href="./style team.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier League Teams</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <style>
+        /* Hide the team list initially */
+        #team-list {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header style="background-color: blue;">
+        <h1><img src="serie a.png" alt="Serie A">Serie A Team</h1>
+        <nav>
+            <ul>
+                <li><a href="serie a home.html">Home</a></li>
+                <li><a href="#" onclick="toggleTeams()">Teams</a></li>
+                <li><a href="serie a players.html">Players</a></li>
+                <li><a href="serie a table.html">Table</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="team-list">
+            <h2>Serie A Teams</h2>
+            <ul>
+              <li>AC Milan</li>
+              <li>Inter Milan</li>
+              <li>Napoli</li>
+              <li>Atlanta</li>
+              <li>AC Monza</li>
+              <li>Bologna</li>
+              <li>Cagliari</li>
+              <li>Empoli</li>
+              <li>Fiorentina</li>
+              <li>Frosinone</li>
+              <li>Genoa</li>
+              <li>Juventus</li>
+              <li>Lazio</li>
+              <li>Roma</li>
+              <li>Sassuolo</li>
+              <li>Sportiva Salernitana</li>
+              <li>Torino</li>
+              <li>Udinese</li>
+              <li>US Lecce</li>
+              <li>Verona</li>
+                <!-- Add more teams as needed -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Serie A</p>
+    </footer>
+
+    <script>
+        // JavaScript function to toggle the visibility of the team list
+        function toggleTeams() {
+            var teamList = document.getElementById("team-list");
+            if (teamList.style.display === "none") {
+                teamList.style.display = "block"; // Show the team list
+            } else {
+                teamList.style.display = "none"; // Hide the team list
+            }
+        }
+    </script>
+</body>
+<html>
+<!-- partial -->
+
+</body>
+</html>

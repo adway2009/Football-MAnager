@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - teams.html</title>
+  <link rel="stylesheet" href="./style team.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier League Teams</title>
+    <link rel="stylesheet" href="la liga.css"> <!-- Link to external CSS file -->
+    <style>
+        /* Hide the team list initially */
+        #team-list {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header style="background-color: red;">
+        <h1><img src="laliga.png" alt="Premier League Players">La Liga Teams</h1>
+        <nav>
+            <ul>
+                <li><a href="la liga.html">Home</a></li>
+                <li><a href="#" onclick="toggleTeams()">Teams</a></li>
+                <li><a href=".html">Players</a></li>
+                <li><a href="la liga table.html">Table</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="team-list">
+            <h2>La liga Teams</h2>
+            <ul>
+                <li>Real Madrid</li>
+                <li>Barcaelona</li>
+                <li>Girona</li>
+                <li>Atlético Madrid</li>
+                <li>Athletic Club</li>
+                <li>Real Sociedad</li>
+                <li>Real Betis</li>
+                <li>Valencia</li>
+                <li>Villarreal</li>
+                <li>Getafe</li>
+                <li>Osasuma</li>
+                <li>Sevilla</li>
+                <li>Las Palmas</li>
+                <li>Alavés </li>
+                <li>Rayo Vallecano</li>
+                <li>Mallorca</li>
+                <li>Celta Vigo</li>
+                <li>Cádiz</li>
+                <li>Granada</li>
+                <li>Almeria</li>
+                <!-- Add more teams as needed -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 La liga Manager</p>
+    </footer>
+
+    <script>
+        // JavaScript function to toggle the visibility of the team list
+        function toggleTeams() {
+            var teamList = document.getElementById("team-list");
+            if (teamList.style.display === "none") {
+                teamList.style.display = "block"; // Show the team list
+            } else {
+                teamList.style.display = "none"; // Hide the team list
+            }
+        }
+    </script>
+</body>
+<html>
+<!-- partial -->
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - teams.html</title>
+  <link rel="stylesheet" href="./style team.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier League Teams</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <style>
+     /* Hide the team list initially */
+     #team-list {
+         display: none;
+     }
+     /* Style for team list items */
+     #team-list ul li {
+         list-style: none;
+         margin-bottom: 10px;
+     }
+     /* Style for team images */
+     #team-list ul li img {
+         width: 50px; /* Adjust width as needed */
+         height: auto; /* Maintain aspect ratio */
+         margin-right: 10px; /* Add some space between image and team name */
+         vertical-align: middle; /* Align image vertically */
+     }
+ </style>
+</head>
+<body>
+    <header style="background-color: #000000;">
+        <h1><img src="pl.png" alt="Premier League Team">Premier League Teams</h1>
+        <nav>
+            <ul>
+                <li><a href="index home.html.html">Home</a></li>
+                <li><a href="#" onclick="toggleTeams()">Teams</a></li>
+                <li><a href="index player.html">Players</a></li>
+                <li><a href="index table.html">Table</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="team-list">
+            <h2>Premier League Teams</h2>
+            <ul>
+                <li>Liverpool</li>
+                <li>Manchester United</li>
+                <li>Manchester City</li>
+                <li>Arsenal</li>
+                <li>Chelsea</li>
+                <li>Aston Villa</li>
+                <li>Burnley</li>
+                <li>West Ham</li>
+                <li>Brentford</li>
+                <li>Brighton</li>
+                <li>Luton Town</li>
+                <li>Newcastle</li>
+                <li>Wolves</li>
+                <li>Tottenham Hotspur</li>
+                <li>Fulham</li>
+                <li>Everton</li>
+                <li>Crystal Palace F.C</li>
+                <li>Nottingham Forest F.C</li>
+                <li>Sheffield United</li>
+                <li>A.F.C. Bournemouth</li>
+                <!-- Add more teams as needed -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Premier League Football</p>
+    </footer>
+
+    <script>
+        // JavaScript function to toggle the visibility of the team list
+        function toggleTeams() {
+            var teamList = document.getElementById("team-list");
+            if (teamList.style.display === "none") {
+                teamList.style.display = "block"; // Show the team list
+            } else {
+                teamList.style.display = "none"; // Hide the team list
+            }
+        }
+    </script>
+</body>
+<html>
+<!-- partial -->
+
+</body>
+</html>
